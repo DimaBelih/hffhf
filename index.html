@@ -3,13 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello Website</title>
+    <title>JavaScript Example</title>
 </head>
 <body>
 
-    <header>
-        <h1>Hello, World!</h1>
-    </header>
+    <script>
+        // Create a heading element
+        var heading = document.createElement("h1");
+        heading.textContent = "Hello, World!";
+
+        // Create a button element
+        var button = document.createElement("button");
+        button.textContent = "Change Greeting";
+        button.onclick = function() {
+            // Change the greeting when the button is clicked
+            heading.textContent = "Hello, JavaScript!";
+        };
+
+        // Append the heading and button to the body of the document
+        document.body.appendChild(heading);
+        document.body.appendChild(button);
+    </script>
 
 </body>
 </html>
